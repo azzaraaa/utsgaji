@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perhitungan Gaji Karyawan</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Formulir Perhitungan Gaji Karyawan</h1>
+
+        <form method="POST">
+            {{ form.hidden_tag() }}
+            <div class="form-group">
+                <label for="jumlah_karyawan">Jumlah Karyawan:</label> {{ form.jumlah_karyawan() }}
+            </div>
+            <div>
+                <button type="submit" class="btn btn-primary">Selanjutnya</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

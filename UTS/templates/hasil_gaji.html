@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hasil Perhitungan Gaji Karyawan</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Hasil Perhitungan Gaji Karyawan</h1>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Nama</th>
+                    <th>Gaji</th>
+                    <th>Potongan Tidak Masuk</th>
+                    <th>Potongan Cuti Berlebih</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for karyawan in hasil_output %}
+                <tr>
+                    <td>{{ karyawan['nama'] }}</td>
+                    <td>Rp{{ karyawan['gaji'] }}</td>
+                    <td>Rp{{ karyawan['potongan_tidak_masuk'] }}</td>
+                    <td>Rp{{ karyawan['potongan_cuti_berlebih'] }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,159 @@
+/* Global Styles */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #111;
+    /* Dark background for a sleek look */
+    color: white;
+    /* White text for contrast */
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Container for the content */
+
+.container {
+    width: 80%;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: #222;
+    /* Slightly lighter background for the content area */
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    /* Soft shadow to lift the box */
+}
+
+
+/* Heading Style */
+
+h1 {
+    text-align: center;
+    font-size: 36px;
+    color: #ff5c8d;
+    /* Bright pink color for the title */
+    margin-bottom: 30px;
+}
+
+
+/* Form Styles */
+
+form {
+    margin: 0 auto;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+form .form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    font-size: 18px;
+    color: #ff5c8d;
+    /* Pink labels */
+    margin-bottom: 8px;
+}
+
+form input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ff5c8d;
+    /* Pink border for input fields */
+    border-radius: 5px;
+    background-color: #333;
+    /* Dark background for inputs */
+    color: white;
+    /* White text in inputs */
+}
+
+form input:focus {
+    border-color: #ff5c8d;
+    background-color: #444;
+    /* Lighter background on focus */
+    outline: none;
+}
+
+form button {
+    background-color: #ff5c8d;
+    /* Pink button */
+    color: white;
+    font-size: 18px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #ff3c6e;
+    /* Slightly darker pink on hover */
+}
+
+
+/* Table Styles for Results */
+
+table {
+    width: 100%;
+    margin-top: 30px;
+    border-collapse: collapse;
+}
+
+table th,
+table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #444;
+    /* Dark border */
+}
+
+table th {
+    background-color: #ff5c8d;
+    /* Pink header row */
+    color: white;
+    font-size: 18px;
+}
+
+table td {
+    background-color: #222;
+    /* Darker background for rows */
+    color: white;
+}
+
+table tr:nth-child(even) {
+    background-color: #333;
+    /* Zebra-striping for rows */
+}
+
+table tr:hover {
+    background-color: #444;
+    /* Hover effect on rows */
+}
+
+
+/* Additional Styles for Forms and Output */
+
+fieldset {
+    border: 1px solid #ff5c8d;
+    /* Pink border around input sections */
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #222;
+    /* Dark background for fieldsets */
+}
+
+legend {
+    font-size: 20px;
+    color: #ff5c8d;
+    font-weight: bold;
+}
+
+button[type="submit"] {
+    margin-top: 20px;
+    font-size: 18px;
+}
